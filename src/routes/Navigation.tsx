@@ -28,7 +28,7 @@ export const Navigation = () => {
                 <Route path="users" element={<h1>Users Page</h1>} />
                 <Route path="shopping" element={<ShoppingPage />} />
 
-                <Route path="/*" element={<Navigate to="/home" replace />} />
+                <Route path="/*" element={<Navigate to="/shopping" replace />} />
             </Routes>
         </div>
     </BrowserRouter>
