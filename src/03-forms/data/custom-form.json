@@ -1,0 +1,90 @@
+[
+    {
+        "type": "input",
+        "name": "firstName",
+        "placeholder": "Facundo",
+        "label": "Nombre",
+        "value": "",
+        "validation": [
+            {
+                "type": "required",
+                "message": "El nombre es requerido"
+            },
+            {
+                "type": "minLength",
+                "message": "El nombre debe tener al menos 3 caracteres",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "type": "input",
+        "name": "lastName",
+        "placeholder": "Tanovich",
+        "label": "Apellido",
+        "value": "",
+        "validation": [
+            {
+                "type": "required",
+                "message": "El apellido es requerido"
+            },
+            {
+                "type": "minLength",
+                "message": "El apellido debe tener al menos 3 caracteres",
+                "value": 3
+            },
+            {
+                "type": "maxLength",
+                "message": "El apellido no debe tener mas de 15 caracteres",
+                "value": 15
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "facundo@gmail.com",
+        "label": "Email",
+        "value": "",
+        "validation": [
+            {
+                "type": "required",
+                "message": "El email es requerido"
+            },
+            {
+                "type": "email",
+                "message": "El email no es válido"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGamer",
+        "label": "Juego Favorito",
+        "value": "",
+        "options": [
+            {
+                "id": "",
+                "label": "Seleccione un juego"
+            },
+            {
+                "id": "1",
+                "label": "Counter Strike"
+            },
+            {
+                "id": "2",
+                "label": "Fifa"
+            },
+            {
+                "id": "3",
+                "label": "Mario"
+            }
+        ],
+        "validation": [
+            {
+                "type": "required",
+                "message": "El juego es requerido"
+            }
+        ]
+    }
+]
